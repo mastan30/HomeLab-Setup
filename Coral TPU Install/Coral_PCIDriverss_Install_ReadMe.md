@@ -41,7 +41,7 @@ I have used this following steps as my Kernel is a higher than version 4.
   
   
   
-### Issues encountered while installing :### 
+### Issues encountered while installing : ### 
   
 1. When installing proxmox drivers , encountered the following error :
 
