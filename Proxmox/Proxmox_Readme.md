@@ -1,5 +1,5 @@
 
-###Proxmox Setup:###
+### Proxmox Setup: ###
 
 1. Install VentyOs in a Pendrive and copy Proxmox VE ISO in it.
 
@@ -23,43 +23,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###Issues encountered while installing :###
+### Issues encountered while installing : ###
 
 1. Unauthorized for apt-update bullseye - https://forum.proxmox.com/threads/update-unauthorized-after-latest-update.61584/
 Fixed it by commenting the bullseye pve-enterprise line in below file:
