@@ -11,8 +11,6 @@ I have used this following steps as my Kernel is a higher than version 4.
 
 
 ```
-
-
 1. uname -r
 2. lsmod | grep apex
 3. echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
@@ -47,29 +45,29 @@ I have used this following steps as my Kernel is a higher than version 4.
   
 1. When installing proxmox drivers , encountered the following error :
 
-```
-      /dev/apex_0 Not Found 
-```
+    ```
+    /dev/apex_0 Not Found 
+    ```
       
    This is due to DKMS not getting installed and this link helped in getting it fixed:
    Main Thread:
    
-```
-   https://forum.proxmox.com/threads/install-of-pcie-drivers-for-coral-tpu.95503/ 
-```
+    ```
+    https://forum.proxmox.com/threads/install-of-pcie-drivers-for-coral-tpu.95503/ 
+    ```
 
    Comment which helped in fixing it:
    
-```
-   https://forum.proxmox.com/threads/install-of-pcie-drivers-for-coral-tpu.95503/post-478721
-```
+    ```
+     https://forum.proxmox.com/threads/install-of-pcie-drivers-for-coral-tpu.95503/post-478721
+    ```
 
    Also this thread helped in understanding DKMS is not installed properly and reinstall them:
    Main thread:
    
-```
-   https://github.com/google-coral/edgetpu/issues/493
-```
+    ```
+     https://github.com/google-coral/edgetpu/issues/493
+    ```
    Comment:
    
    ```
