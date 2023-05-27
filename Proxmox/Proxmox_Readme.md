@@ -27,9 +27,13 @@
 
 1. Unauthorized for apt-update bullseye - https://forum.proxmox.com/threads/update-unauthorized-after-latest-update.61584/
 Fixed it by commenting the bullseye pve-enterprise line in below file:
- ```
- /etc/apt/sources.list.d/pve-enterprise.list
- ```
+   ```
+   /etc/apt/sources.list.d/pve-enterprise.list
+   ```
+   And also adding the non-enterprise bullseye in the below file:
+   ```
+   /etc/apt/sources.list
+   ```
  
 
 
