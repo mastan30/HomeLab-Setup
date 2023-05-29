@@ -15,14 +15,13 @@ I have used this following steps as my Kernel is a higher than version 4.
 2. lsmod | grep apex
 3. echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
 4. curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-5. apt-get update -y
+5. apt update && apt upgrade -y && apt install -y pve-headers
 6. apt-get install gasket-dkms libedgetpu1-std
-7. apt-get reinstall gasket-dkms libedgetpu1-std ( used this when gasket dkms showed 0 installs)
-8. sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0660\", GROUP=\"apex\"' >> /etc/udev/rules.d/65-apex.rules"
-9. groupadd apex
-10. reboot
-11. lspci -nn | grep 089a
-12. ls /dev/apex_0
+7. sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0660\", GROUP=\"apex\"' >> /etc/udev/rules.d/65-apex.rules"
+8. groupadd apex
+9. reboot
+10. lspci -nn | grep 089a
+11. ls /dev/apex_0
   ```
   
   
