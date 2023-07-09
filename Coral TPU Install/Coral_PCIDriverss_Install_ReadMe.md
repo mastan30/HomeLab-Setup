@@ -94,5 +94,3 @@ I have used this following steps as my Kernel is a higher than version 4.
    root@sweethomelab:~# ls -l /dev/apex_0
    crw-rw---- 1 root root 120, 0 May 23 20:09 /dev/apex_0
    ```
-   
-   
