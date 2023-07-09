@@ -22,6 +22,8 @@ eg:  mp0: /media/share/Movies,mp=/media/
 ```
 5. Now start the container, check if the LXC start properly, else there is something missing in the mounting process, mostly wrong path mention in the conf file.
 
+6. In the console of the LXC, now check the path provided as mount point in the command above mentioned.
+
 
 
 
