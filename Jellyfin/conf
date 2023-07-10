@@ -1,0 +1,43 @@
+### Path to this is /var/lib/lxc/100/config
+
+lxc.cgroup.relative = 0
+lxc.cgroup.dir.monitor = lxc.monitor/100
+lxc.cgroup.dir.container = lxc/100
+lxc.cgroup.dir.container.inner = ns
+lxc.arch = amd64
+lxc.include = /usr/share/lxc/config/ubuntu.common.conf
+lxc.apparmor.profile = generated
+lxc.apparmor.allow_nesting = 1
+lxc.monitor.unshare = 1
+lxc.tty.max = 2
+lxc.environment = TERM=linux
+lxc.uts.name = jellyfin
+lxc.cgroup2.memory.max = 2147483648
+lxc.cgroup2.memory.high = 2130706432
+lxc.cgroup2.memory.swap.max = 536870912
+lxc.rootfs.path = /var/lib/lxc/100/rootfs
+lxc.net.0.type = veth
+lxc.net.0.veth.pair = veth100i0
+lxc.net.0.hwaddr = AE:74:30:2F:9A:26
+lxc.net.0.name = eth0
+lxc.net.0.mtu = 1500
+lxc.net.0.script.up = /usr/share/lxc/lxcnetaddbr
+lxc.cgroup2.devices.allow = a
+lxc.cap.drop =
+lxc.cgroup2.devices.allow = c 226:0 rwm
+lxc.cgroup2.devices.allow = c 226:128 rwm
+lxc.cgroup2.devices.allow = c 29:0 rwm
+lxc.mount.entry = /dev/fb0 dev/fb0 none bind,optional,create=file
+lxc.mount.entry = /dev/dri dev/dri none bind,optional,create=dir
+lxc.mount.entry = /dev/dri/renderD128 dev/dri/renderD128 none bind,optional,create=file
+lxc.cgroup2.devices.allow = c 195:* rwm
+lxc.cgroup2.devices.allow = c 508:* rwm
+lxc.cgroup2.devices.allow = c 236:* rwm
+lxc.mount.entry = /dev/nvidia0 dev/nvidia0 none bind,optional,create=file
+lxc.mount.entry = /dev/nvidiactl dev/nvidiactl none bind,optional,create=file
+lxc.mount.entry = /dev/nvidia-modeset dev/nvidia-modeset none bind,optional,create=file
+lxc.mount.entry = /dev/nvidia-uvm dev/nvidia-uvm none bind,optional,create=file
+lxc.mount.entry = /dev/nvidia-uvm-tools dev/nvidia-uvm-tools none bind,optional,create=file
+lxc.mount.entry = /dev/nvidia-uvm-tools dev/nvidia-caps/nvidia-cap1 none bind,optional,create=file
+lxc.mount.entry = /dev/nvidia-uvm-tools dev/nvidia-caps/nvidia-cap2 none bind,optional,create=file
+lxc.cgroup2.cpuset.cpus = 3,10
