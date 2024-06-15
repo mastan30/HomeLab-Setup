@@ -118,3 +118,8 @@ Run the drivers file with the extension
 Reboot
 
 nvidia-smi -10
+
+Aticles:
+
+https://theorangeone.net/posts/lxc-nvidia-gpu-passthrough/
+video : https://www.youtube.com/watch?v=-Us8KPOhOCY
